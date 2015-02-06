@@ -9,6 +9,6 @@ public class SushiController  {
 
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String sayHello(){
-		return "Hello There !";
+		return "Hello There ";
 	}
 }
