@@ -21,20 +21,20 @@ public class SushiResource {
     @Inject
     SushiRepository sushiRepository;
 
-	@RequestMapping(value="/hello", method=RequestMethod.GET)
-	public String sayHello(){
-		return "Hello There !";
-	}
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String sayHello() {
+        return "Hello There !";
+    }
 
 
     @RequestMapping(value = "/{name}", method = RequestMethod.POST)
-    public Sushi createSushi(@PathVariable String name){
+    public Sushi createSushi(@PathVariable String name) {
         final Sushi savedSushi = sushiRepository.save(new Sushi(name));
         return savedSushi;
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public List<Sushi> findAllSushi(){
+    public List<Sushi> findAllSushi() {
         return sushiRepository.findAll();
     }
 
