@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
     @RequestMapping(method = RequestMethod.GET)
-    public String welcomeHomePage(){
+    public String welcomeHomePage() {
         return "index";
     }
 }
