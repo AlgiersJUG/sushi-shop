@@ -1,5 +1,6 @@
 package org.jug.algeria.sushi.controller;
 
+
 import org.fest.assertions.Assertions;
 import org.jug.algeria.sushi.SushiApplication;
 import org.junit.Test;
@@ -19,7 +20,7 @@ public class SushiControllerTest {
 
     @Test
     public void sushiControllerShouldSay_HelloThere_WhenInvokedOnExpectedContextURI(){
-        final ResponseEntity<String> entity = restTemplate.getForEntity("http://localhost:9000/api/hello", String.class);
+        final ResponseEntity<String> entity = restTemplate.getForEntity("http://localhost:9000/api/sushi/hello", String.class);
         Assertions.assertThat(entity).isNotNull();
         Assertions.assertThat(entity.getBody()).isNotNull().isEqualTo("Hello There !");
     }
