@@ -1,2 +1,3 @@
 #!/bin/bash
-mvn spring-boot:run
+set ARGS=$1
+mvn spring-boot:run $ARGS

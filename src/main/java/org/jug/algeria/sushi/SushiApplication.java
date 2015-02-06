@@ -7,6 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SushiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SushiApplication.class, args);
+        SpringApplication.run(new Object[]{SushiApplication.class}, args);
     }
 }
