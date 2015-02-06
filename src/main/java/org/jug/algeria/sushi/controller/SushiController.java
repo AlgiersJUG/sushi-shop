@@ -11,6 +11,6 @@ public class SushiController  {
 
 	@RequestMapping(value="/hello", method=RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public String sayHello(){
-		return "Hello There ";
+		return "Hello There !";
 	}
 }
